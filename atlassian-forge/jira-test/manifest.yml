@@ -1,0 +1,11 @@
+modules:
+  jira:issuePanel:
+    - key: jira-test-hello-world-panel
+      function: main
+      title: My Test Forge App
+      icon: https://developer.atlassian.com/platform/forge/images/icons/issue-panel-icon.svg
+  function:
+    - key: main
+      handler: index.run
+app:
+  id: ari:cloud:ecosystem::app/d844ae98-6c1d-4254-8cb3-170892b38599

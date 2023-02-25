@@ -1,0 +1,3 @@
+com/atlassian/tutorial/config/MyPluginJavaConfig.class
+com/atlassian/tutorial/api/MyPluginComponent.class
+com/atlassian/tutorial/impl/MyPluginComponentImpl.class
