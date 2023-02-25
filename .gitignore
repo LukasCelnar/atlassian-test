@@ -1,0 +1,13 @@
+./atlassian-test/jira-plugin/myPlugin/target/container/tomcat8x/cargo-jira-home/webapps/jira.war
+./atlassian-test/jira-plugin/myPlugin/target/jira/jira-original.war
+./atlassian-test/jira-plugin/myPlugin/target/jira/jira.war
+/jira-plugin/myPlugin/target/jira/webapp
+/jira-plugin/myPlugin/target/container
+/jira-plugin/myPlugin/target/jira/tmp-resources
+/jira-plugin/myPlugin/target/jira/home/plugins
+jira-plugin/myPlugin/target/jira/jira.war
+jira-plugin/myPlugin/target/jira/jira-original.war./jira-plugin/myPlugin/target/container/tomcat8x/cargo-jira-home/webapps/jira.war
+./jira-plugin/myPlugin/target/jira/jira-original.war
+./jira-plugin/myPlugin/target/jira/jira.war
+./.git/objects/d2/59588d3fde8c5b15ecdfe9826303744106e77f
+./.git/objects/23/5ac4f673b2ce9204bcc0c8f371198d6e5dead7
