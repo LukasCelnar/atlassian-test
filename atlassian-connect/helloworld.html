@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script src="https://connect-cdn.atl-paas.net/all.js" defer></script>
         <link rel="stylesheet" href="https://unpkg.com/@atlaskit/css-reset@2.0.0/dist/bundle.css" media="all">
-        <script src="https://connect-cdn.atl-paas.net/all.js" async></script>
     </head>
     <body>
-        <section id="content" class="ac-content">
-            <h1>Hello World</h1>
-        </section>
+        Table of Issues
+        <div id="content23" class="ac-content">pfo</div>
     </body>
+    <script>
+        window.addEventListener('load', function() {
+            console.log("running1")
+            AP.define('my-module', function() {
+                console.log("running2")
+                AP.request({
+                    url: '/rest/api/3/search',
+                    type: 'GET',
+                    contentType: 'application/json',
+                    dataType: 'json',
+                    data: {
+                        jql: 'project = TS',
+                        fields: ['summary', 'description', 'assignee', 'status']
+                    },
+                    success: function(response) {
+                        // handle successful response here
+                        console.log("success")
+                        console.log(response);
+                    },
+                    error: function(xhr, statusText, errorThrown) {
+                        console.log("eerroorr")
+                        // handle error here
+                        console.log(statusText);
+                    }
+                });
+
+        })
+        });
+        
+    </script>
+    <script>
+        document.getElementById('content23').innerHTML = "Hey"
+    </script>
+    <script>
+        fetch('https://jsonplaceholder.typicode.com/todos/1')
+            .then(response => response.json())
+            .then(json => console.log(json))
+    </script>
 </html>

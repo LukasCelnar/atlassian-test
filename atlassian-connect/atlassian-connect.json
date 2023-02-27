@@ -1,26 +1,27 @@
 {
-     "name": "Hello World",
-     "description": "Atlassian Connect app",
-     "key": "com.example.myapp",
-     "baseUrl": "https://125e-37-48-32-245.ngrok.io",
-     "vendor": {
-         "name": "Example, Inc.",
-         "url": "http://example.com"
-     },
-     "authentication": {
-         "type": "none"
-     },
-     "apiVersion": 1,
-     "modules": {
-         "generalPages": [
-             {
-                 "url": "/helloworld.html",
-                 "key": "hello-world",
-                 "location": "system.top.navigation.bar",
-                 "name": {
-                     "value": "Greeting"
-                 }
-             }
-         ]
+    "name": "My Issues Panels!",
+    "description": "Displays a table with all issues within the current Jira project",
+    "key": "com.example.myapp",
+    "baseUrl": "https://5c0f-176-74-157-8.ngrok.io",
+    "authentication": {
+      "type": "none"
+    },
+    "apiVersion": 1,
+    "modules": {
+      "webPanels": [
+        {
+          "key": "my-module",
+          "name": {
+            "value": "My Issues Panel"
+          },
+          "location": "atl.jira.view.issue.right.context",
+          "url": "/helloworld.html",
+          "layout": {
+            "width": "100%",
+            "height": "400px"
+          }
+        }
+      ]
     }
-}
+  }
+  
