@@ -2,7 +2,7 @@ modules:
   jira:issuePanel:
     - key: jira-test-hello-world-panel
       function: main
-      title: My Test Forge App
+      title: List of Projects
       icon: https://developer.atlassian.com/platform/forge/images/icons/issue-panel-icon.svg
   function:
     - key: main

@@ -2,7 +2,8 @@
     "name": "My Issues Panels!",
     "description": "Displays a table with all issues within the current Jira project",
     "key": "com.example.myapp",
-    "baseUrl": "https://5c0f-176-74-157-8.ngrok.io",
+    "baseUrl": "https://026a-176-74-157-8.ngrok.io",
+    "scopes": ["read"],
     "authentication": {
       "type": "none"
     },
