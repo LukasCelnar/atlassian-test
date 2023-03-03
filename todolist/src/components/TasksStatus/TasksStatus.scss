@@ -1,0 +1,31 @@
+@import "../../sass/variables.scss";
+
+.TasksStatus {
+    display: flex;
+    margin: 1rem 0 0.5rem 0;
+    justify-content: center;
+    color: $colorSecondary;
+
+    &-finished {
+        margin-right: 1.3rem;
+
+        &-title {
+            margin-bottom: 0.18rem;
+        }
+
+        &-number {
+            color: $colorGreen
+        }
+    }
+
+    &-unfinished {
+
+        &-title {
+            margin-bottom: 0.18rem;
+        }
+
+        &-number {
+            color: $colorRed;
+        }
+    }
+}

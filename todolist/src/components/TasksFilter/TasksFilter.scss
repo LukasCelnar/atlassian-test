@@ -1,0 +1,64 @@
+@import "../../sass/variables.scss";
+
+.TasksFilter {
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.625rem;
+    
+    @media only screen and (max-width: 500px) {
+        display: block;
+    }
+
+    &-label {
+        margin-right: 0.3rem;
+        color: $colorSecondary;
+    }
+
+    &-button {
+        padding: 0.2rem 1rem;
+        background-color: $colorPrimary;
+        color: #FFF;
+        border-radius: 0.3rem;
+        border: none;
+        font-size: 1rem;
+        outline: none;
+        cursor: pointer;
+        margin-left: auto;
+        margin: 0.43rem;
+
+        &-all {
+            background-color: rgba($colorPrimary, 0.3);
+
+            &-selected {
+                background-color: $colorPrimary;
+            }
+        }
+
+        &-finished {
+            background-color: rgba($colorGreen, 0.3);
+
+            &-selected {
+                background-color: $colorGreen;
+            }
+        }
+
+        &-unfinished {
+            background-color: rgba($colorRed, 0.3);
+
+            &-selected {
+                background-color: $colorRed;
+            }
+        }
+
+        &-clean {
+            background-color: $colorRed;
+            margin-left: auto;
+            margin-right: 0;
+
+            &:hover {
+                background-color: $colorRedHover;
+            }
+        }
+    }
+}

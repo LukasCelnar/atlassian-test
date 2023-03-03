@@ -1,0 +1,27 @@
+@import "../../sass/variables.scss";
+
+.TaskItem {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: $colorSecondary;
+
+    &-name {
+        width: 100%;
+        background-color: transparent;
+        border: 0;
+        outline: none;
+        color: $colorSecondary;
+        margin-right: auto;
+    }
+
+    &-delete {
+        margin-left: 1rem;
+        cursor: pointer;
+        color: $colorRed;
+    }
+
+    &-edit {
+        cursor: pointer;
+    }
+}
